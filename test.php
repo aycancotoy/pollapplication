@@ -1,12 +1,4 @@
 <?php
-	
-	/*
-		Get 3 random files from 16 wav files.
-		There are 3 conditions.
-		
-	
-	*/
-	
 	$results = array();
 	
 	// Generate cond_0 .. cond_3 folders
@@ -14,6 +6,8 @@
 	for ($i=0; $i<4; $i++){
 		$media_folders[] = "cond_$i";
 	}
+	
+	shuffle($media_folders);
 	
 	$media_files = array();
 	
@@ -27,8 +21,15 @@
 	
 	$a = array_splice($random_numbers, 0, 3);
 	$b = array_splice($random_numbers, 0, 3);
-	$c = array_splice($random_numbers, 0, 3);		
-
+	$c = array_splice($random_numbers, 0, 3);
+	echo "<hr>";
+	
+	foreach ($a as $key => $value){
+		settype($value, 'string');
+		$a[$key] = 'a'.$a[$key];
+	}
+	
+	print_r($a);
 	
 	$results[] = $a;
 	$results[] = $b;
