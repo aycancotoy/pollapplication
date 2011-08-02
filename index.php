@@ -24,12 +24,22 @@
 			</td>
 		</tr>
 		<tr>
+			<td colspan="2" align="center">
+				Which one do you prefer?
+			</td>
+		</tr>
+		<tr>
 			<td align="center" colspan="2">
-				<button>-2</button>
-				<button>-1</button>
-				<button>0</button>
-				<button>+1</button>
-				<button>+2</button>
+				<label for="result">-2</label>
+				<input type="radio" name="result" value="" id="result">
+				<label for="result">-1</label>
+				<input type="radio" name="result" value="" id="result">
+				<label for="result">0</label>
+				<input type="radio" name="result" value="" id="result">
+				<label for="result">+1</label>
+				<input type="radio" name="result" value="" id="result">								
+				<label for="result">+2</label>
+				<input type="radio" name="result" value="" id="result">
 			</td>
 		</tr>
 	</table>
