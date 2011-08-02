@@ -44,7 +44,7 @@
 			echo "Grup: $mkey";
 			echo '<ul>';
 			foreach ($mvalue as $value){
-				echo '<li>'.$value.'</li>';
+				echo '<li>'.$media_files[$value].'</li>';
 			}
 			echo '</ul>';			
 		}
